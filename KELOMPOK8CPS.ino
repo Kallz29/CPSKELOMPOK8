@@ -17,7 +17,7 @@
 FirebaseData fbdo;
 FirebaseAuth auth;
 FirebaseConfig config;
-unsigned long sendDataPrevMillis = 0;
+unsigned long senddataprevmillis = 0;
 
 unsigned long count = 0;
 const int mq2= A0;  
@@ -66,7 +66,7 @@ void setup() {
 
 void loop() {
   float t = dht.readTemperature();
-  int smokeValue = analogRead(mq2);
+  int smoke = analogRead(mq2);
 
   // Print values to Serial Monitor
   Serial.print(F("Temp: "));
@@ -74,7 +74,7 @@ void loop() {
   Serial.println("°C");
 
   Serial.print(F("Smoke: "));
-  Serial.print(smokeValue);
+  Serial.print(smoke);
   Serial.println("PPM");
 
   // Display values on LCD
@@ -86,20 +86,20 @@ void loop() {
   lcd.setCursor(7, 1);
   lcd.print("     ");
   lcd.setCursor(7, 1);
-  lcd.print(String(smokeValue) + "PPM");
+  lcd.print(String(smoke) + "PPM");
 
   // Check conditions and control the buzzer
-  if (smokeValue > 700 && t > 45) {
+  if (smoke > 700 && t > 45) {
     digitalWrite(buzzer, HIGH);  // Turn on the buzzer
     Serial.println("Buzzer ON");
   } else {
     digitalWrite(buzzer, LOW);   // Turn off the buzzer
     Serial.println("Buzzer OFF");
   }
-  if (Firebase.ready() && (millis() - sendDataPrevMillis > 15000 ||sendDataPrevMillis == 0)){
-  sendDataPrevMillis = millis();
+  if (Firebase.ready() && (millis() - senddata > 15000 ||senddata == 0)){
+  senddata = millis();
   Firebase.setFloat(fbdo, "/temp", t);
-  Firebase.setFloat(fbdo, "/smoke", smokeValue);
+  Firebase.setFloat(fbdo, "/smoke", smoke);
   }
 
   delay(2000);
