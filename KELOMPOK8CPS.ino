@@ -17,7 +17,7 @@
 FirebaseData fbdo;
 FirebaseAuth auth;
 FirebaseConfig config;
-unsigned long senddataprevmillis = 0;
+unsigned long senddata = 0;
 
 unsigned long count = 0;
 const int mq2= A0;  
