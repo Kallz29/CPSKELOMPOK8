@@ -96,7 +96,7 @@ void loop() {
     digitalWrite(buzzer, LOW);   // Turn off the buzzer
     Serial.println("Buzzer OFF");
   }
-  if (Firebase.ready() && (millis() - senddata > 15000 ||senddata == 0)){
+  if (Firebase.ready() && (millis() - senddata > 2000 ||senddata == 0)){
   senddata = millis();
   Firebase.setFloat(fbdo, "/temp", t);
   Firebase.setFloat(fbdo, "/smoke", smoke);
