@@ -1,0 +1,101 @@
+/* Di dalam file CSS Anda, atau gunakan inline styling di komponen React jika Anda lebih suka */
+.footer__taskbar {
+    display: flex;
+    justify-content: space-around; /* Untuk menyebarkan ikon secara merata */
+    margin-top: 15px; /* Atur jarak atas antara taskbar footer dan konten di atasnya */
+  }
+  
+  .footer__taskbar a {
+    margin: 0 25px; /* Atur jarak horizontal antara setiap ikon */
+  }
+
+  .footer__taskbar a:nth-child(1) svg {
+    color: rgb(255, 255, 255);
+  }
+  
+  .footer__taskbar a:nth-child(2) svg {
+    color: rgb(145, 59, 148);
+  }
+  
+  .footer__taskbar a:nth-child(3) svg {
+    color: #dfaf77;
+  }
+  
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #191419; /* Change this to your desired background color */
+    color: white; /* Change this to your desired text color */
+    padding: 5px; /* Adjust the padding as needed */
+    text-align: center;
+    z-index: 1000; /* Ensure the footer stays above other content */
+  }
+  
+  .footer__taskbar {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer__taskbar a {
+    color: white; /* Change this to your desired link color */
+    margin: 0 25px; /* Adjust the margin as needed */
+  }
+
+
+  .footer {
+    /* Your existing styles */
+  
+    /* Add the following styles */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .about-us {
+    margin-right: 20px; /* Adjust this value as needed */
+  }
+  
+  
+  .footer {
+    /* Your existing styles */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer__about-us {
+    /* Gaya standar */
+    margin-right: 20px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer; /* Menjadikan kursor menjadi tangan */
+}
+
+.footer__about-us:hover {
+    /* Gaya saat hover */
+    text-decoration: underline; /* Menambahkan garis bawah saat hover */
+    color: #dfaf77; /* Opsional: Mengubah warna saat hover */
+}
+
+
+/* Tambahkan class untuk gaya link "Contact us on WhatsApp" */
+.footer__whatsapp-link {
+  /* Gaya standar */
+  margin-right: 20px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none; /* Menghapus garis bawah secara standar */
+}
+
+.footer__whatsapp-link:hover {
+  /* Gaya saat hover */
+  text-decoration: underline; /* Menambahkan garis bawah saat hover */
+  color: #dfaf77; /* Opsional: Mengubah warna saat hover */
+}
+
