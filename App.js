@@ -9,7 +9,15 @@
       <div className="App">
         <header className="App-header">
       <Navbar />
-         <hr className="divider" />
+      <div className="content-wrapper">
+        <div id="introduction"></div>
+        <Introduction />
+        <hr className="divider" />
+        <div id="desc"></div> {/* Tambahkan id="desc" di sini */}
+        <Desc />
+      </div>
+      <hr className="divider" />
+      
           <Footer /> 
         </header>
       </div>
