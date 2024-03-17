@@ -8,7 +8,8 @@
     return (
       <div className="App">
         <header className="App-header">
-       
+         <hr className="divider" />
+          <Footer /> 
         </header>
       </div>
     );
