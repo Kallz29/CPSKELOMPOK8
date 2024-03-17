@@ -8,6 +8,7 @@
     return (
       <div className="App">
         <header className="App-header">
+      <Navbar />
          <hr className="divider" />
           <Footer /> 
         </header>
