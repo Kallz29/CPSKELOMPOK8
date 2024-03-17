@@ -1,0 +1,39 @@
+.team-profile {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif; /* Contoh pengaturan font */
+  color: #ffffff; /* Mengubah warna teks menjadi #DFA77 */
+  margin-top: 150px; /* Menambahkan margin atas untuk menjauhkannya dari navbar */
+}
+
+
+.team-title {
+  margin-bottom: 25px; /* Jarak antara judul dan anggota tim */
+  font-size: 70px; /* Contoh ukuran font yang lebih kecil */
+}
+
+.team-members {
+  display: flex;
+  justify-content: center; /* Menengahkan anggota tim */
+}
+
+.team-member {
+  margin-right: 30px; /* Jarak antar anggota tim */
+}
+
+.team-member img {
+  width: 250px; /* Ukuran gambar yang dikecilkan */
+  height: auto;
+  border-radius: 50%; /* Membuat gambar menjadi bulet */
+}
+
+.team-member img {
+  max-width: 100%; /* Mengatur lebar maksimum gambar menjadi 100% dari kontainer */
+  height: auto; /* Mengatur tinggi gambar agar tetap proporsional */
+  border-radius: 50%; /* Membuat gambar menjadi bulet */
+}
+
+@media (max-width: 768px) {
+  .team-member img {
+    max-width: 80%; /* Mengurangi lebar gambar saat lebar layar kurang dari atau sama dengan 768px */
+  }
+}
