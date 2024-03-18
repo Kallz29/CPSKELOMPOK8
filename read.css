@@ -1,34 +1,11 @@
-  /* Styling for data monitoring content */
   .data-monitoring-rfews {
     font-size: 16px;
     line-height: 1.6;
-    color: #ffffff; /* Text color */
+    color: #ffffff; 
   }
   
-  /* Styling for headings within data monitoring */
   .data-monitoring-content h2 {
     font-size: 13 px;
-    color: #ffffff; /*Heading color */
-    margin-bottom: 10px; /*Bottom margin for headings*/
+    color: #ffffff; 
+    margin-bottom: 10px; 
   }
-  
-  /* Styling for data monitoring lists */
-  /* .data-monitoring-content ul { */
-    /* list-style-type: none; Remove default list style */
-    /* padding: 0; Remove default padding */
-  /* } */
-  
-  /* .data-monitoring-content ul li { */
-    /* margin-bottom: 5px; Bottom margin for list items */
-  /* } */
-  
-  /* Styling for data monitoring links */
-  /* .data-monitoring-content a { */
-    /* color: #007bff; Link color */
-    /* text-decoration: underline; Underline links */
-  /* } */
-  
-  /* .data-monitoring-content a:hover { */
-    /* color: #0056b3; Link color on hover */
-  /* } */
-  
