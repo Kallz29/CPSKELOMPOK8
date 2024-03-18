@@ -18,12 +18,20 @@
             }
         };
 
+        const handleDataMonitoringRFEWSClick = (e) => {
+            e.preventDefault(); // Menghentikan perilaku bawaan dari tautan
+            const readSection = document.getElementById('read'); // Mengambil elemen dengan id 'read'
+            if (readSection) {
+                readSection.scrollIntoView({ behavior: 'smooth' }); // Menggulir halaman ke elemen 'read' dengan efek yang halus
+            }
+        };
+
         return (
             <div className="navbar">
                 <ul className="navbar-nav">
                     <li className="nav-item"><a href="#team-profile" onClick={handleTeamProfileClick}>Profile</a></li>
                     <li className="nav-item"><a href="#apa-itu-rfews" onClick={handleApaItuRFEWSClick}>Description</a></li>
-                    <li className="nav-item"><a href="#data-monitoring-rfews">Monitoring</a></li>
+                    <li className="nav-item"><a href="#data-monitoring-rfews" onClick={handleDataMonitoringRFEWSClick}>Monitoring</a></li>
                 </ul>
             </div>
         );
