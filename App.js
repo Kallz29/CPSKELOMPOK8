@@ -13,7 +13,7 @@
         <div id="introduction"></div>
         <Introduction />
         <hr className="divider" />
-        <div id="desc"></div> {/* Tambahkan id="desc" di sini */}
+        <div id="desc"></div> 
         <Desc />
       </div>
       <hr className="divider" />
