@@ -27,23 +27,24 @@ function SensorData() {
 }, []);
 
     return(
-        <div className='data-container'>
-            <div className='data-content'>
-                <div className='data-item'>
+      <div className='data-container' id='read'>
+        <div className='data-content'>
+            <div className='data-item'>
                 <h1>Realtime Database</h1>
-                    <h2>Smoke</h2>
-                    <p className='value' id='smoke'>
-                        {smoke}
-                    </p>
-                </div>
-                <div className='data-item'>
-                    <h2>Temp</h2>
-                    <p className='value' id='temp'>
-                        {temp}
-                    </p>
-                </div>
+                <h2>Smoke</h2>
+                <p className='value' id='smoke'>
+                    {smoke}
+                </p>
+            </div>
+            <div className='data-item'>
+                <h2>Temp</h2>
+                <p className='value' id='temp'>
+                    {temp}
+                </p>
             </div>
         </div>
-    )
+    </div>
+);
 }
+
 export default SensorData;
