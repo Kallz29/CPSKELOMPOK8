@@ -38,3 +38,21 @@
     transition: color 0.3s ease; /* Efek transisi untuk perubahan warna teks */
 }
 
+.nav-item.logout button {
+    background-color: #DFAF77; /* Mengatur warna background tombol logout sama dengan background navbar */
+    border: none; /* Menghilangkan border */
+    color: #000000; /* Mengatur warna teks */
+    font-size: 25px; /* Mengatur ukuran font */
+    cursor: pointer; /* Mengubah kursor saat mengarah ke tombol */
+    padding: 0; /* Menghilangkan padding */
+    font-weight: 1000;
+    
+}
+
+.nav-item.logout button:hover,
+.nav-item.logout button:active {
+    color: #ffffff; /* Mengubah warna teks menjadi putih saat hover atau active */
+    font-weight: 1000;
+    border-bottom: 2px solid #ffffff; /* Menambahkan garis bawah saat kursor mengarah atau tautan aktif */
+    transition: color 0.3s ease; 
+}
